@@ -1,0 +1,6 @@
+<h1>Hikes</h1>
+<p><%= link_to 'New Hike', new_hike_path %></p> 
+<% @hikes.each do |hike| %>
+  <h2><%= hike.name %></h2>
+  <%= link_to 'Show Hike', hike_path(hike) %>
+  <% end %>
